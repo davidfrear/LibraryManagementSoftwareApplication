@@ -1,0 +1,60 @@
+The focus of this project will be to understand how I use object-oriented programming to make it more efficient
+
+This application contains the following functions
+- fetch all the available books in the library
+- add new books
+- keep a track of borrowed books
+- update the details based on the books returned
+
+This project uses lists, dictionaries, strings, loops, conditionals, and more.
+Whilst implementing File handling and Object-Oriented Programming.
+
+The major focus of the project is to implement object-oriented programming.
+
+The very first step from the user's point of view would be to display the menu of the library management application
+Following would be the main menu options:-
+- display books
+- lend a book
+- add a book
+- return a book
+
+Depending on the choice entered, we would need to perform the operation and return the details to the output screen
+The above process has to be done repeatedly until the user quits.
+
+My Approach
+
+The idea behind using OOP is to bring the factor of re-usability.
+Therefore, this software can be used by as many libraries as needed by just creating a new object.
+All the other functionalities would be inside the class handled by individual methods that can be invoked using the object whenever needed
+
+Note: I have not mentioned the lendDictionary in the parameters of _init_ since I don't want to pass it at the time of object creation
+
+Once the class was created, I then started adding behaviors to the class. Which is the methods for each different functionality
+Below is a list of the each method and functionality below.
+- Add new books = addbook()
+- Fetch all available books in the library = displayBooks()
+- Keep a track of borrowed books = lendBook()
+- Update the details based on the books returned = returnBook()
+
+Inside my displayBooks() method, I have a print statement that will print the name of the library ( for this I have used the Fstrings)
+The 'self' keyword can access the attributes
+Finally, I loop through the book list and print the names of the book
+
+I used the Membership operator to check whether an element already exists in the list
+
+One of my main functions of my library management system would be to keep a record of the books borrowed by the consumers/students
+
+I used the update method to insert specified items to the dictionary where the specified items can be a dictionary or an iterable object with values
+
+The pop() method removes and returns an element from a dictionary having the given key
+
+Now I will create a menu that will accept inputs from users
+Since these methods are inside the class, I will need the object to access them
+I will create a loop that will run until the user breaks it
+Until then, I will keep accepting the input from the applications user.
+
+One thing to notice is that I have wrapped the whole part of a code inside a method which we have given a name as main()
+this method will be outside the library class
+I have just created a menu to accept the input from the user.
+using the syntax library.methodName to make the calls to the required method.
+
